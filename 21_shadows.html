@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box & Text shadow</title>
+</head>
+<style>
+    /* box-shadow هو الظل اللى بيتحط عالبوكس */
+    .container{
+        display: flex;
+    }
+    .box{
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        margin: 10px;
+        /* outside-box الشادو موجود بره البوكس */
+    /* h-shadow افقى ||  v-shadow العمودى  || blur تقل الظل  || color لون الظل  */
+        /* box-shadow: -5px -5px 3px orange;
+        box-shadow: 5px 5px 3px orange; */
+
+/* السالب بيعكس اتجاه الشادو */
+
+    /* inside-box الشادو موجود جوه البوكس */
+    /* box-shadow: inset 7px 7px 10px red ;
+    box-shadow: inset -7px -7px 10px red ; */
+
+    /*Multiple-shadow انك تقدر تحط اكتر من شادو جوه البوكس */
+    /* بنضيفه با كوما , */
+box-shadow: 8px 8px 12px blueviolet, 15px 15px 20px blueviolet  
+  }
+
+  h1{
+    font-size: 50px;
+    color: #033b4a;
+        /* h-shadow افقى ||  v-shadow العمودى  || blur تقل الظل  || color لون الظل  */
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  }
+
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Box 1</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                 Totam, dolor.</p>
+        </div>
+
+
+                <div class="box">
+            <h2>Box 2</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                 Totam, dolor.</p>
+        </div>
+    </div>
+
+            <br>
+        <br>
+        <hr>
+        <h1>Shaimaa Saied</h1>
+
+    
+</body>
+</html>

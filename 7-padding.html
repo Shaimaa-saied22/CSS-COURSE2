@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padding</title>
+    <style>
+
+        /* 
+        1-padding= space between border and element
+        2-border
+        3-margin= space outside border
+        
+    
+        */
+        /* reset style */
+        /* 
+        🎯 يعني إيه Reset Style في CSS؟
+
+هي فكرة إنك تمسحي (تصفّري) التنسيقات الافتراضية اللي المتصفح بيحطها لوحده.
+
+🧠 ليه بنعمل كده؟
+
+المتصفحات (زي Chrome و Firefox) بتحط Styles تلقائيًا زي:
+
+margin
+padding
+شكل العناوين (h1, h2…)
+القوائم (ul, li)
+
+⚠️ المشكلة:
+كل متصفح ممكن يعرضها بشكل مختلف!
+
+💡 الحل:
+
+نستخدم Reset Style علشان:
+👉 نخلي كل حاجة تبدأ من صفر
+👉 ويبقى التصميم ثابت في كل المتصفحات
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+        */
+        *{
+            padding: 0;
+            margin: 0;
+
+        }
+
+    #home{
+        border: solid 5px blue;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    /* top right bottom left */
+    /* top/bottom right/left */
+
+    </style>
+</head>
+<body>
+    <div id="home">
+        <h2>Home</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Magnam sint delectus neque quidem recusandae suscipit reiciendis id?
+          Repellendus, quas omnis.</p>
+          <br>
+          <br>
+          <br>
+          <br>
+    </div>
+
+        <div id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Magnam sint delectus neque quidem recusandae suscipit reiciendis id?
+          Repellendus, quas omnis.</p>
+    </div>
+
+     <br>
+          <br>
+          <br>
+          <br>
+
+
+        <div id="services">
+        <h2>Services</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Magnam sint delectus neque quidem recusandae suscipit reiciendis id?
+          Repellendus, quas omnis.</p>
+    </div>
+
+
+        <div id="contact">
+        <h2>Contact</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Magnam sint delectus neque quidem recusandae suscipit reiciendis id?
+          Repellendus, quas omnis.</p>
+    </div>
+
+</body>
+</html>

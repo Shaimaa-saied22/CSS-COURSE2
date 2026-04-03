@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+        /* 
+        🔥 الفرق في سطر واحد:
+content-box ➜ الحجم بيكبر مع الـ padding والـ border
+border-box ➜ الحجم ثابت زي ما إنتِ كتبتيه
+        
+        */
+        *{
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+        .box-1{
+            background-color:yellow;
+            width: 200px;
+            height: 100px;
+            border: 8px solid blue;
+            margin-bottom: 10px;
+            box-sizing: content-box;
+        }
+
+        .box-2{
+            background-color:yellow;
+            width: 200px;
+            height: 100px;
+            border: 8px solid blue;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box-1">this is div</div>
+    <div class="box-2">this is div</div>
+</body>
+</html>

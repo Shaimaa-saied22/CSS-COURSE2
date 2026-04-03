@@ -1,0 +1,36 @@
+h3{
+    color: red;
+}
+
+/* global arrtibutes
+class بنستخدمه اكتر من مره 
+id بنستخدمه مره واحده بس 
+*/
+.paragraph{
+    color: gold;
+}
+#Heading{
+    color: blueviolet;
+}
+/* Multiple+Nested Selectors */
+/* في CSS فيه طريقتين شائعين لكتابة السيليكتورز (Selectors) عشان نحدد العناصر اللي هيتطبق عليها الستايل، وهما Multiple Selectors و Nested Selectors. هشرحهم ببساطة 👇
+
+
+1️⃣ Multiple Selectors
+
+ده لما يكون عندك أكتر من عنصر وعايزة تطبقي عليهم نفس الستايل بدل ما تكتبي الكود لكل عنصر لوحده.
+
+بنستخدم الفاصلة ,
+
+
+2️⃣ Nested Selectors
+
+ده لما نحدد عنصر موجود جوا عنصر تاني.
+
+يعني بنحدد العلاقة بينهم.
+
+
+
+
+*/
+/* fonts */

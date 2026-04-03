@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth Child</title>
+    <styLe>
+        ul li{
+            list-style: none;
+            margin: 10px 0;
+        }
+        /* first child */
+        ul li:first-child{
+            background-color: red;
+        }
+        /* last child */
+        ul li:last-child{
+            background-color: red;
+        }
+        /* position 9
+        :nth-child(9)
+        */
+        /* ul li:nth-child(8){
+            background-color: blue !important;
+        } */
+        /* Every2  battern*/
+        /* ul li:nth-child(2n){
+            background-color: green;
+        } */
+        /* هنا هيبدأ يعمل الباترن من 6 */
+         ul li:nth-child(2n + 6){
+            background-color:yellow;
+        }
+        /* odd الاعداد الفرديه */
+        ul li:nth-child(odd){
+            background-color: blueviolet;
+        }
+        /* Even */
+        ul li:nth-child(even){
+            background-color: aqua;
+        }
+    </styLe>
+</head>
+<body>
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+        <li>List Item 5</li>
+        <li>List Item 6</li>
+        <li>List Item 7</li>
+        <li>List Item 8</li>
+        <li>List Item 9</li>
+        <li>List Item 10</li>
+        <li>List Item 11</li>
+        <li>List Item 12</li>
+        <li>List Item 13</li>
+        <li>List Item 14</li>
+        <li>List Item 15</li>
+        <!-- li{List Item $}*15 -->
+        <!-- علامه الدولار shift + 4 -->
+    </ul>
+</body>
+</html>

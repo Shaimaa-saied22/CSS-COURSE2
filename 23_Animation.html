@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key frames Animation</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+
+            /* animation-name: box;
+            ده اسم الحركة اللي هتشتغل. لازم تكوني عاملة حركة بنفس الاسم باستخدام @keyframes.
+            @keyframes box {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: blue;
+    }
+}
+
+
+
+            animation-duration: 2s;
+ده الوقت اللي الحركة هتاخده عشان تخلص مرة واحدة.
+2s يعني ثانيتين.
+ده بيحدد سرعة الحركة أثناء التنفيذ.
+ease-in-out معناها:
+تبدأ ببطء
+تسرع في النص
+تبطأ تاني في الآخر
+فيه أنواع تانية:
+linear = نفس السرعة طول الوقت
+ease-in = تبدأ ببطء
+ease-out = تنتهي ببطء
+
+
+            animation-timing-function: ease-in-out;
+ده الوقت اللي العنصر هيستناه قبل ما يبدأ الحركة.
+
+0s يعني تبدأ فورًا.
+
+            animation-delay: 0s;
+هيستنى 3 ثواني وبعدين يبدأ.
+
+
+
+            animation-iteration-count: 2;
+ده عدد مرات تكرار الحركة.
+
+2 يعني الحركة هتشتغل مرتين.
+
+            animation-direction: alternate;
+ده بيحدد اتجاه الحركة في كل مرة.
+
+alternate يعني:
+
+أول مرة: من البداية للنهاية
+ثاني مرة: من النهاية للبداية
+
+يعني العنصر يروح ويرجع.
+
+مثال:
+لو بيتحرك من اليسار لليمين، في المرة الثانية هيرجع من اليمين للشمال.
+
+
+            animation-fill-mode: forwards;
+ده بيحدد العنصر يعمل إيه بعد ما الحركة تخلص.
+
+forwards يعني يحتفظ بآخر شكل وصل له.
+
+مثال:
+لو الحركة غيرت لون العنصر من أحمر لأزرق، بعد ما تخلص هيفضل أزرق.
+
+لو شلتي السطر ده، غالبًا هيرجع للشكل الأصلي بعد انتهاء الحركة.
+
+ */
+animation: box 2s ease-in-out 2 forwards;
+
+        }
+        @keyframes box{
+            from{
+                width: 100px;
+            }
+            to{
+                width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

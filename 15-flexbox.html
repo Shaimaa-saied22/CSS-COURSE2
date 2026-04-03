@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        /* 
+        1.display:flex;
+
+        2.flex-direction 
+        - wrap / nowrap(default)
+        - (row(default) / row-reverse / column reverse / column)
+        3.flex-wrap
+        - 🎯 وظيفة flex-wrap
+
+خاصية flex-wrap بتتستخدم مع Flexbox علشان تحدد:
+👉 هل العناصر (items) تفضل في سطر واحد؟
+👉 ولا تنزل لسطر جديد لما المساحة تخلص؟
+       4.flex-shrink =1(default)  /0
+       - 🎯 يعني إيه flex-shrink ؟
+
+flex-shrink بتحدد:
+👉 العنصر ينكمش قد إيه لما المساحة مش كفاية
+🧠 الفكرة ببساطة:
+
+لما العناصر أكبر من عرض الـ container
+المتصفح بيبدأ "يصغّرهم"
+
+هنا بقى:
+👉 flex-shrink بتحدد مين يصغر أكتر ومين لأ
+1️⃣ flex-shrink: 1; (الافتراضي)
+العنصر مسموح له يصغر
+وكل العناصر بتصغر بنسبة متساوية
+2️⃣ flex-shrink: 0;
+❌ العنصر مش هيصغر خالص
+حتى لو باقي العناصر اتضغطت
+
+
+5. flex-grow =0(default)
+🎯 يعني إيه flex-grow ؟
+
+flex-grow بتحدد:
+👉 العنصر يكبر قد إيه لما يكون في مساحة فاضية
+
+🧠 الفكرة ببساطة:
+
+لو عندك container وفيه مساحة زيادة
+المتصفح بيوزع المساحة دي على العناصر
+
+👉 هنا flex-grow بتحدد:
+مين ياخد مساحة أكبر 👇
+
+6.flex-basis
+-🎯 يعني إيه flex-basis ؟
+
+flex-basis بتحدد:
+👉 الحجم الأساسي (initial size) للعنصر قبل ما يحصل توزيع للمساحة
+🧠 الفكرة ببساطة:
+
+قبل ما flex-grow يكبر
+وقبل ما flex-shrink يصغر
+
+👉 المتصفح بيبص الأول على flex-basis
+
+📌 مقارنة مهمة:
+لو استخدمتي width:
+.item {
+  width: 200px;
+}
+لو استخدمتي flex-basis:
+.item {
+  flex-basis: 200px;
+}
+
+✅ الاتنين شبه بعض
+❗ لكن flex-basis هو اللي Flexbox بيعتمد عليه الأول
+
+🔥 الخلاصة:
+
+flex-basis =
+👉 الحجم المبدئي للعنصر قبل أي تكبير أو تصغير
+
+7.justifiy-content
+- flex-start / center / flex-end / space-between / space-around
+space-between بيحط مسافات بين كل عنصر والتانى 
+space-around بيحط مسافات قبل وبعد العنصر 
+space-evenly هى مزيج بين الاتنين 
+توزّع العناصر بمسافات متساوية تمامًا بينهم وبين الأطراف
+🧠 الفكرة ببساطة:
+
+لو عندك 3 عناصر:
+
+justify-content: space-evenly;
+
+👉 المسافات هتكون:
+
+قبل أول عنصر = نفس المسافة
+بين كل عنصر والتاني = نفس المسافة
+بعد آخر عنصر = نفس المسافة
+
+يعني كل الفراغات متساوية 100% 👌
+
+8.align-items
+لازم معاها تحديد ال hight 
+- flex-start / flex-end / center / stretch
+
+        */
+
+
+        .flexbox{
+            background-color: red;
+            height: 80vh;
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+
+        .box-1{
+            /* flex-shrink: 0; */
+        }
+        .box-2{
+            /* flex-grow: 1; */
+            /* width: 200px; */
+            flex-basis: 200px;
+        }
+        .box-3{
+            /* flex-grow: 2; */
+        }
+
+        .box{
+            background-color: #333;
+            border-radius: 15px;
+            color: white;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox">
+        <div class="box box-1">
+            <h3>Box 1</h3>
+        </div>
+          <div class="box box-2">
+            <h3>Box 2</h3>
+        </div>
+          <div class="box box-3">
+            <h3>Box 3</h3>
+        </div>
+        <!-- <div class="box box-4">
+            <h3>Box 4</h3>
+        </div>
+        <div class="box box-5">
+            <h3>Box 5</h3>
+        </div> -->
+                <!-- <div class="box box-5">
+            <h3>Box 5</h3>
+        </div>
+        <div class="box box-5">
+            <h3>Box 5</h3>
+        </div>
+        <div class="box box-5">
+            <h3>Box 5</h3>
+        </div>
+        <div class="box box-5">
+            <h3>Box 5</h3>
+        </div>
+        <div class="box box-5">
+            <h3>Box 5</h3>
+        </div>
+        <div class="box box-5">
+            <h3>Box 5</h3>
+        </div>
+        <div class="box box-5">
+            <h3>Box 5</h3>
+        </div>
+        <div class="box box-5">
+            <h3>Box 5</h3>
+        </div>
+        <div class="box box-5">
+            <h3>Box 5</h3>
+        </div>
+        <div class="box box-5">
+            <h3>Box 5</h3>
+        </div>
+
+ -->
+    </div>
+</body>
+</html>

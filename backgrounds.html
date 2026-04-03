@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgrounds</title>
+    <style>
+        /* 
+        🎯 يعني إيه شفافية في CSS؟
+
+الشفافية هنا معناها إن العنصر يكون مش باين بالكامل — يعني تقدري تشوفي اللي وراه.
+
+.
+
+🧪 بنعملها إزاي؟
+
+في طريقتين مشهورين:
+
+1️⃣ باستخدام opacity
+
+1 = العنصر واضح 100% (مفيش شفافية)
+
+0.5 = نصف شفاف
+
+0 = مختفي تمامًا
+
+⚠️ ملاحظة مهمة:
+
+opacity بيأثر على العنصر كله (النص + الصورة + الخلفية)
+
+✅ باستخدام rgba:
+.box {
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+➡️ الخلفية بس هي اللي شفافة، النص واضح 👍
+        */
+
+        /*(rgba) red green blue alpha channel */
+        #home{
+            background-color: rgb(255, 0, 0,0.5);
+            background-image: url(images/download.jfif);
+            height: 700px;
+            background-repeat: no-repeat;
+
+            background-position: center center;
+
+
+            /* background-size: cover;
+            background-attachment: fixed; */
+            /*             background-attachment: fixed;
+background-attachment: scroll;
+💡 معناها:
+
+الخلفية بتتحرك مع الصفحة لما تعملي Scroll
+
+🔥 النتيجة:
+
+الصورة بتطلع وتختفي مع المحتوى
+
+مفيش تأثير خاص
+
+✅ ده الوضع العادي
+
+
+
+background-attachment: fixed;
+💡 معناها:
+
+الخلفية تفضل ثابتة في مكانها
+والمحتوى هو اللي يتحرك فوقها
+
+🔥 النتيجة:
+
+بيظهر تأثير حلو اسمه Parallax Effect 😍
+
+تحسي إن الخلفية منفصلة عن الصفحة
+
+
+*/
+
+
+
+
+
+
+            /* background-size: cover;
+💡 معناها:
+
+الصورة تملأ العنصر بالكامل (من غير فراغات)
+
+🔥 النتيجة:
+
+الصورة ممكن تتقص (crop)
+
+بس مفيش أي مساحة فاضية
+
+✅ مناسب لما:
+
+عايزة الصورة تغطي الخلفية كلها (زي البانر)
+
+background-size: contain;
+💡 معناها:
+
+الصورة تظهر كاملة بدون قص
+
+🔥 النتيجة:
+
+مفيش قص للصورة
+
+لكن ممكن يظهر فراغ حوالين الصورة
+
+✅ مناسب لما:
+
+عايزة الصورة تظهر كاملة زي ما هي (لوجو مثلًا)
+
+*/
+
+#about{
+    background: url(images/download\ \(1\).jfif) no-repeat rgba(255, 0, 0,0.5) ;
+    height: 500;
+}
+        }
+    </style>
+</head>
+<body>
+    <div id="home">
+        <h2>Home</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Magnam sint delectus neque quidem recusandae suscipit reiciendis id?
+          Repellendus, quas omnis.</p>
+    </div>
+
+        <div id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Magnam sint delectus neque quidem recusandae suscipit reiciendis id?
+          Repellendus, quas omnis.</p>
+    </div>
+
+
+        <div id="services">
+        <h2>Services</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Magnam sint delectus neque quidem recusandae suscipit reiciendis id?
+          Repellendus, quas omnis.</p>
+    </div>
+
+
+        <div id="contact">
+        <h2>Contact</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Magnam sint delectus neque quidem recusandae suscipit reiciendis id?
+          Repellendus, quas omnis.</p>
+    </div>
+
+</body>
+</html>

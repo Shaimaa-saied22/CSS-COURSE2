@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid span</title>
+    <style>
+        /* 
+        تمام، span في الـ CSS Grid تستخدم علشان تخلي عنصر يغطي أكثر من صف أو أكثر من عمود.
+        1️⃣ استخدام grid-column: span X;
+        ده معناه: العنصر هيغطي عمودين بدل عمود واحد.
+
+        2️⃣ استخدام grid-row: span X;
+        ده معناه: العنصر هيغطي صفين بدل صف واحد.
+        
+        */
+        .grid{
+            display: grid;
+            grid-template-columns:repeat(4, 2fr);
+
+
+        }
+        .box{
+            padding: 1.5rem;
+            background-color: #eee;
+            border: 1px solid #bbb;
+            text-align: center;
+        }
+
+        .box:first-child{
+            grid-column: 1/span 3;
+            grid-row: 1/span 2;
+        }
+
+        .bo:nth-child(5) {
+            grid-column: 2/span 3;
+            grid-row: 2/span 2;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="box">Box 5</div>
+        <div class="box">Box 6</div>
+        <div class="box">Box 7</div>
+        <div class="box">Box 8</div>
+        <div class="box">Box 9</div>
+        <div class="box">Box 10</div>
+        <div class="box">Box 11</div>
+        <div class="box">Box 12</div>
+        <div class="box">Box 13</div>
+        <div class="box">Box 14</div>
+        <div class="box">Box 15</div>
+        <div class="box">Box 16</div>
+    </div>
+    
+</body>
+</html>

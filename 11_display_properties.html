@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+    <style>
+/* 
+
+1.display block= بتاخد 100% من عرض الشاشه 
+-takes 100% width of website
+-respect margin &padding& height
+-respect line break
+
+2.display-inline
+-takes width of element only
+-do not respect width and height
+-respect padding&&margin (only from left and right)
+-do not respect line break
+
+
+3.display-inline-block
+-takes width of element only
+-do not respect line break
+-respect margin &padding& height
+
+4.display-none
+-removes element from html
+
+5.visiability hidden
+-hide element from html
+
+*/
+span.a{
+    display: block;
+    background-color: yellow;
+    border: 1px solid black;
+    padding:15px ;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+
+}
+
+span.b{
+    display: inline;
+    background-color: yellow;
+    border: 1px solid black;
+    padding:15px ;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+span.c{
+    display: inline-block;
+    background-color: yellow;
+    border: 1px solid black;
+    padding:15px ;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+
+}
+
+#none{
+    /* display: none; */
+    visibility: hidden;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Display Properties</h1>
+    <div>
+        <h2>Display Block</h2>
+        <p>Lorem ipsum dolor sit amet<span class="a"> consectetur</span> <span class="a"> adipisicing </span>elit. Fuga repellat laudantium perspiciatis nobis repudiandae maxime quasi accusamus velit deleniti voluptas earum mollitia, ullam laborum natus ipsam, culpa quaerat quos! Mollitia.</p>
+    </div>
+
+    <div>
+        <h2>Display inline</h2>
+        <p>Lorem ipsum dolor sit amet<span class="b"> consectetur</span> <span class="b"> adipisicing </span>elit. Fuga repellat laudantium perspiciatis nobis repudiandae maxime quasi accusamus velit deleniti voluptas earum mollitia, ullam laborum natus ipsam, culpa quaerat quos! Mollitia.</p>
+    </div>
+
+    <div>
+        <h2>Display inline-block</h2>
+        <p>Lorem ipsum dolor sit amet<span class="c"> consectetur</span> <span class="c"> adipisicing </span>elit. Fuga repellat laudantium perspiciatis nobis repudiandae maxime quasi accusamus velit deleniti voluptas earum mollitia, ullam laborum natus ipsam, culpa quaerat quos! Mollitia.</p>
+    </div>
+
+    <div id="none">
+        <h2>Display none</h2>
+        <p>Lorem ipsum dolor sit amet<span class="d"> consectetur</span> <span class="d"> adipisicing </span>elit. Fuga repellat laudantium perspiciatis nobis repudiandae maxime quasi accusamus velit deleniti voluptas earum mollitia, ullam laborum natus ipsam, culpa quaerat quos! Mollitia.</p>
+    </div>
+</body>
+</html>

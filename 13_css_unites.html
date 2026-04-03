@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS unites</title>
+    <style>
+        /* 
+        1.px = 16 (default)
+
+        2.em 
+        - 1em=font-size of parent element
+
+        3.rem
+        - 1rem=font-size of root element(html)
+
+        4.%
+        - 100% is 100% of parent elements
+
+        5.vw=viewport width
+
+        6.vh=viewport height
+
+
+        */
+        /* div{
+            font-size: 20px;
+        }
+        .a{
+            font-size: 50%;
+        } */
+        /* html{
+            font-size: 20px;
+        }
+
+        .b{
+            font-size: 3rem;
+
+        .
+        } */
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .viewport{
+            background-color: red;
+            width: 100vw;
+            height: 10vh;
+        }
+        .c{
+            border: 5px dashed blue;
+            padding: 15px;
+            margin: 60px;
+            width: 50%;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- <p class="a">this is a paragraph</p>
+        <p class="b">this is a paragraph</p>
+ -->
+
+<div class="viewport"></div>
+<div class="c">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, quis vitae eaque officia temporibus natus recusandae nobis aliquam soluta eveniet at quae. Nesciunt eius at ex aspernatur voluptatibus aliquam tenetur!</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+/* 
+margin auto
+🔥 ملخص سريع
+auto = المتصفح يحسب المسافة
+أشهر استخدام = توسيط العنصر
+لازم يكون في width علشان يشتغل صح
+🔵 ثانيًا: text-align: center
+
+📌 بيستخدم علشان يوسط المحتوى جوه العنصر (زي النص أو الصور)
+
+div {
+  text-align: center;
+}
+
+✅ النتيجة:
+الكلام أو الصورة اللي جوا الـ div هيكونوا في النص
+*/
+
+.container{
+    width: 960px;
+    margin: 30px auto;
+}
+.box{
+    border: 7px solid yellowgreen;
+    padding: 15px;
+    margin-bottom:10px ;
+    background: #f4f4f4;
+    /* text align محاذاه النص */
+    text-align: right;
+    /*  direction اتجاه الكتابه العنصر */
+    direction: rtl;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div id="home" class="box">
+        <h2>الرئيسيه:</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Magnam sint delectus neque quidem recusandae suscipit reiciendis id?
+          Repellendus, quas omnis.</p>
+    </div>
+
+        <div id="about" class="box">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Magnam sint delectus neque quidem recusandae suscipit reiciendis id?
+          Repellendus, quas omnis.</p>
+    </div>
+
+
+        <div id="services" class="box">
+        <h2>Services</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Magnam sint delectus neque quidem recusandae suscipit reiciendis id?
+          Repellendus, quas omnis.</p>
+    </div>
+
+
+        <div id="contact"  class="box">
+        <h2>Contact</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Magnam sint delectus neque quidem recusandae suscipit reiciendis id?
+          Repellendus, quas omnis.</p>
+    </div>
+    </div>
+</body>
+</html>

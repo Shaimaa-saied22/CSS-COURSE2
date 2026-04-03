@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        /* 
+        1-transform:rotat(deg);
+        rotate() بتستخدم علشان تلفي العنصر.
+        deg معناها درجة
+        45deg يعني لف العنصر 45 درجة
+        90deg يعني ربع لفة
+        180deg يعني نص لفة
+        ولو عايزة تلفيه في الاتجاه العكسي، استخدمي رقم سالب:
+
+
+        2-transform: skew(25deg);
+        skew() معناها "تميل" أو "تشوه" العنصر، كأنكِ زقيتي الجزء العلوي منه ناحية اليمين أو الشمال.
+        25deg يعني مقدار الميل 25 درجة.
+
+
+        3-transform: scale();
+        وظيفته بيضاعفلك حجم البوكس
+
+
+       4-translateY() بتحرك العنصر لفوق أو لتحت على المحور الرأسي Y.
+لو الرقم موجب، العنصر ينزل لتحت
+لو الرقم سالب، العنصر يطلع لفوق    
+
+
+
+      5-        transform: translateX(50px);
+translateX() بتحرك العنصر يمين أو شمال على المحور الأفقي X.
+لو الرقم موجب، العنصر يتحرك لليمين
+لو الرقم سالب، العنصر يتحرك للشمال
+
+
+
+    6-transform: translateX(100px, 100px);
+    translate() بتحرك العنصر في الاتجاهين معًا:
+
+أول رقم 100px = يتحرك 100 بكسل يمين على محور X
+ثاني رقم 100px = يتحرك 100 بكسل لتحت على محور Y
+
+يعني العنصر هينتقل من مكانه الأصلي:
+
+100px ناحية اليمين
+100px ناحية الأسفل
+
+
+
+
+
+
+
+
+
+        */
+        body{
+            background-color: #333;
+        }
+
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: #fff;
+            transition: all 1s ease-in;
+        }
+        .box:hover{
+        /* transform: rotate(45deg); */
+        /* transform: skew(25deg); */
+        /* transform: scale(5); */
+        /* transform: translateY(-200px); */
+        /* transform: translateX(50px); */
+        transform: translate(100px, 100px);
+    
+    }
+    </style>
+
+</head>
+<body>
+    <header>
+    <div class="box">
+
+    </div>
+    </header>
+</body>
+</html>

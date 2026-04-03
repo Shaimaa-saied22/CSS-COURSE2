@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before && After</title>
+    <style>
+        .box{
+            background-color: #333;
+            color:#fff ;
+            width: 200px;
+            margin: 10px auto;
+            padding: 5px 15px;
+            position: relative;
+        }
+        /* before&&after  بحط بيهم عنصر جوه عنصر 
+            ده بدل استعمال ال span*/
+            /* After */
+        .box::after{
+            content: "Hello";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+        } 
+        /* Before */
+            .box:first-child::before{
+            content: "Hello";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+        } 
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Box 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, unde.</p>
+    </div>
+
+        <div class="box">
+        <h2>Box 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, unde.</p>
+    </div>
+
+
+</body>    <div class="box">
+        <h2>Box 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, unde.</p>
+    </div>
+
+
+    <div class="box">
+        <h2>Box 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, unde.</p>
+    </div>
+
+
+</html>
